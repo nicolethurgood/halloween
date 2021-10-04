@@ -7,7 +7,7 @@
         font-family: 'Sancreek', cursive;
       */
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Creepster', cursive;
   position: relative;
   font-weight: 500;
   letter-spacing: 1px;
@@ -20,30 +20,39 @@ html {
   width: 100%;
   height: 100%; }
 
-h1,
-h2,
+h1{ 
+  font-family:  'Sancreek', cursive;
+  font-weight: 300;
+  margin: 0 0 35px;
+  letter-spacing: 5px; 
+  font-size: 70px;}
+h2{ 
+  font-family:  'Sancreek', cursive;
+  font-weight: 300;
+  margin: 0 0 35px;
+  letter-spacing: 5px; 
+  font-size: 50px;}
 h3,
 h4,
 h5,
 h6 {
-  font-family: font-family: 'Creepster', cursive;
+  font-family:  'Creepster', cursive;
   font-weight: 300;
   margin: 0 0 35px;
   letter-spacing: 5px; }
-
-  h4{
-    font-family: font-family: 'Creepster', cursive;
+h4{
+    font-family: 'Creepster', cursive;
     font-weight: 300;
     margin: 0 0 35px;
     letter-spacing: 1px; }
 
 p {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.5;
   margin: 0 0 25px; }
   @media (min-width: 768px) {
     p {
-      font-size: 18px;
+      font-size: 22px;
       line-height: 1.6;
       margin: 0 0 35px; } }
 
@@ -55,54 +64,6 @@ a {
   a:focus, a:hover {
     text-decoration: none;
     color: #407b80; }
-
-#mainNav {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black; }
-  #mainNav .navbar-toggler {
-    font-size: 14px;
-    padding: 11px;
-    color: white;
-    border: 1px solid white; }
-  #mainNav .navbar-brand {
-    font-weight: 700;
-     }
-  #mainNav a {
-    color: white; }
-  #mainNav .navbar-nav .nav-item {
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out; }
-    #mainNav .navbar-nav .nav-item:hover {
-      color: fade(white, 80%);
-      outline: none;
-      background-color: transparent; }
-    #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-      outline: none;
-      background-color: transparent; }
-  @media (min-width: 992px) {
-    #mainNav {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-      -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-      letter-spacing: 1px;
-      border-bottom: none;
-      background: transparent; }
-      #mainNav.navbar-shrink {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black; }
-      #mainNav .nav-link.active {
-        outline: none;
-        background-color: rgba(255, 255, 255, 0.3); }
-        #mainNav .nav-link.active:hover {
-          color: white; } }
 
 .masthead {
   display: table;
@@ -133,79 +94,7 @@ a {
       .masthead .intro-body .intro-text {
         font-size: 22px; } }
 
-.btn-circle {
-  font-size: 26px;
-  width: 55px;
-  height: 55px;
-  margin-top: 15px;
-  line-height: 38px;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-  color: white;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  background: transparent; }
-  .btn-circle:focus, .btn-circle:hover {
-    color: black;
-    outline: none;
-    background: white; }
 
-.content-section {
-  padding-top: 150px;
-  padding-bottom: 150px; }
-
-.portfolio-section {
-  color: white;
-  background: url("") no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-#map {
-  width: 100%;
-  height: 300px; }
-
-@media (min-width: 992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px; }
-  #map {
-    height: 350px; } }
-
-.btn {
-  font-family: 'Brandon Grotesque', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  border-radius: 0; }
-
-.btn-default {
-  color: white;
-  border: 5px solid white; 
-  background-color: transparent; }
-  .btn-default:focus, .btn-default:hover {
-    color: black;
-    text;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.2);; }
-
-ul.banner-social-buttons {
-  margin-top: 0; }
-  @media (max-width: 1199px) {
-    ul.banner-social-buttons {
-      margin-top: 15px; } }
-  @media (max-width: 767px) {
-    ul.banner-social-buttons li {
-      display: block;
-      margin-bottom: 20px;
-      padding: 0; }
-      ul.banner-social-buttons li:last-child {
-        margin-bottom: 0; } }
 
 
 footer {
