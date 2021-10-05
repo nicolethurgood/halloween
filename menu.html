@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Halloween 2021</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Ewert&family=Nosifer&family=Rye&family=Sancreek&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <link href="css/css.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+          <div class="row">
+            <div class="col">
+              <p  class="intro-text"><em>You are cordially invited to</em></p>
+              <h1 id="drip">Nicole's Halloween Party</h1>
+              <h2>October 30th <!--@ 4pm--></h2>
+              
+              <p>🎃 Drinks, games, spooks, and more 🎃<br>
+                🍺 BYOB/BYOW 🥦<br>
+                Check back later for more info and message Nicole directly for any details <br>
+                <br>
+              🤡 <em>Show up in costume or one will be forced upon you. </em>🤡</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+               <div id="div1"><p id="ghost" >👻</p></div>
+            </div>
+          </div>
+
+          <!-- oy get out of my fucking source code the only secret here is that its gonna be circus themed -->
+  </body>
+<script>
+$(function() {
+  $('#div1').hover(function() { 
+      $('#ghost').fadeIn(); 
+  }, function() { 
+      $('#ghost').fadeOut(); 
+  });
+});
+</script>
+</html>
