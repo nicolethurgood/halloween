@@ -13,55 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Ewert&family=Nosifer&family=Rye&family=Sancreek&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Syne+Mono&family=Ewert&family=Nosifer&family=Rye&family=Sancreek&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <div id="alien">👽</div>
-    <svg width="100vw" height="100vh" style="position: fixed">
-      <ellipse cx="0" cy="0" rx="50vw" ry="50vh" fill="red" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="45vh" fill="white" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="40vh" fill="red" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="35vh" fill="white" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="30vh" fill="red" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="25vh" fill="white" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="20vh" fill="black" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="50vh" fill="red" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="45vh" fill="white" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="40vh" fill="red" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="35vh" fill="white" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="30vh" fill="red" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="25vh" fill="white" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="20vh" fill="black" />
-      <rect x="0" y="49vh" width="150" height="150" style="fill: red" />
-    </svg>
-    <!-- <svg width="100vw" height="100vh" style="position: fixed">
-      <ellipse cx="0" cy="0" rx="50vw" ry="50vw" fill="red" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="45vw" fill="white" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="40vw" fill="red" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="35vw" fill="white" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="30vw" fill="red" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="25vw" fill="white" />
-      <ellipse cx="0" cy="0" rx="50vw" ry="20vw" fill="black" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="50vw" fill="red" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="45vw" fill="white" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="40vw" fill="red" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="35vw" fill="white" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="30vw" fill="red" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="25vw" fill="white" />
-      <ellipse cx="100vw" cy="0" rx="50vw" ry="20vw" fill="black" />
-    </svg> -->
     <div id="wrapper">
       <p class="intro-text"><em>You are cordially invited to</em></p>
       <h1>
@@ -69,14 +26,65 @@
         <span id="holloween">Halloween Party</span>
       </h1>
       <h2>October 30<sup>th</sup> @ 4pm</h2>
-      <ul>
-        <li>Drinks, games, spooks, and more</li>
-        <li>BYOB/BYOW</li>
-        <li>
-          Check back for theme info and message Nicole directly for details
-        </li>
-        <li>Show up in costume or one will be <em>forced</em> upon you</li>
-      </ul>
+      <div id="countDown"></div>
+      <div id="info">
+        <div>
+          <p>🎃</p>
+          <p>Drinks, games, spooks, and more</p>
+          <p>🎃</p>
+        </div>
+        <div>
+          <p>🍺</p>
+          <p>BYOB/BYOW</p>
+          <p>🥦</p>
+        </div>
+        <div>
+          <p></p>
+          <p>
+            Check back later for more info and message Nicole directly for any
+            details
+          </p>
+          <p></p>
+        </div>
+        <div>
+          <p>🤡</p>
+          <p><em>Show up in costume or one will be forced upon you.</em></p>
+          <p>🤡</p>
+        </div>
+      </div>
+      <p id="ghost">👻</p>
     </div>
+    <script>
+      (function () {
+        let countDownDate = new Date("Oct 30, 2021 16:00:00").getTime();
+        let now = new Date().getTime();
+        let _1000x60x60x24 = 1000 * 60 * 60 * 24;
+        let _1000x60x60 = 1000 * 60 * 60;
+        let _1000x60 = 1000 * 60;
+        function countDown() {
+          let distance = countDownDate - now;
+          let days = Math.floor(distance / _1000x60x60x24);
+          let hours = Math.floor((distance % _1000x60x60x24) / _1000x60x60);
+          let minutes = Math.floor((distance % _1000x60x60) / _1000x60);
+          let seconds = Math.floor((distance % _1000x60) / 1000);
+          if (days < 10) days = `0${days}`;
+          if (hours < 10) hours = `0${hours}`;
+          if (minutes < 10) minutes = `0${minutes}`;
+          if (seconds < 10) seconds = `0${seconds}`;
+          document.getElementById("countDown").innerHTML = `
+						<span><p>${days}</p><label>days</label></span>
+						<span><p>${hours}</p><label>hours</label></span>
+						<span><p>${minutes}</p><label>minutes</label></span>
+						<span><p>${seconds}</p><label>seconds</label></span>
+					`;
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countDown").innerHTML = "Party Started";
+          }
+        }
+        countDown();
+        setInterval(countDown, 1000);
+      })();
+    </script>
   </body>
 </html>

@@ -1,0 +1,60 @@
+<svg width="100vw" height="20vh" style="position: fixed">
+      <rect x="0" y="0" width="100vw" height="20vh" fill="red" />
+      <ellipse cx="0" cy="0" rx="50vw" ry="70vh" fill="white" />
+      <ellipse cx="0" cy="0" rx="50vw" ry="40vh" fill="red" />
+      <ellipse cx="100vw" cy="0" rx="50vw" ry="70vh" fill="white" />
+      <ellipse cx="100vw" cy="0" rx="50vw" ry="40vh" fill="red" />
+      <ellipse cx="0" cy="0" rx="50vw" ry="30vh" fill="white" />
+      <ellipse cx="0" cy="0" rx="50vw" ry="25vh" fill="red" />
+      <ellipse cx="100vw" cy="0" rx="50vw" ry="30vh" fill="white" />
+      <ellipse cx="100vw" cy="0" rx="50vw" ry="25vh" fill="red" />
+      <ellipse cx="0" cy="0" rx="50vw" ry="23vh" fill="white" />
+      <ellipse cx="0" cy="0" rx="50vw" ry="21vh" fill="red" />
+      <ellipse cx="100vw" cy="0" rx="50vw" ry="23vh" fill="white" />
+      <ellipse cx="100vw" cy="0" rx="50vw" ry="21vh" fill="red" />
+      <ellipse cx="0" cy="0" rx="50vw" ry="20vh" fill="black" />
+      <ellipse cx="100vw" cy="0" rx="50vw" ry="20vh" fill="black" />
+    </svg>
+    <svg width="100vw" height="80vh" style="position: fixed; top: 20vh">
+      <g>
+        <ellipse cx="0" cy="0" rx="20vw" ry="50vh" fill="red" />
+        <ellipse cx="0" cy="0" rx="15vw" ry="50vh" fill="white" />
+        <ellipse cx="0" cy="0" rx="10vw" ry="50vh" fill="red" />
+        <ellipse cx="0" cy="0" rx="5vw" ry="50vh" fill="white" />
+      </g>
+      <g>
+        <ellipse cx="100vw" cy="0" rx="20vw" ry="50vh" fill="red" />
+        <ellipse cx="100vw" cy="0" rx="15vw" ry="50vh" fill="white" />
+        <ellipse cx="100vw" cy="0" rx="10vw" ry="50vh" fill="red" />
+        <ellipse cx="100vw" cy="0" rx="5vw" ry="50vh" fill="white" />
+      </g>
+    </svg>
+    <svg
+      width="120vw"
+      height="80vh"
+      style="position: fixed; top: 20vh; left: -7.5vw"
+    >
+      <g>
+        <rect x="5vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="10vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="15vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="20vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="25vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="30vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="35vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="40vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="45vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="50vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="55vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="60vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="65vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="70vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="75vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="80vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="85vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="90vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="95vw" y="0" width="5vw" height="5vw" fill="red" />
+        <rect x="100vw" y="0" width="5vw" height="5vw" fill="white" />
+        <rect x="105vw" y="0" width="5vw" height="5vw" fill="red" />
+      </g>
+    </svg>
