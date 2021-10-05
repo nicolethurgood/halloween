@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Ewert&family=Nosifer&family=Rye&family=Sancreek&display=swap" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 
     <link href="css/css.css" rel="stylesheet">
 
@@ -27,7 +27,7 @@
           <div class="row">
             <div class="col">
               <p  class="intro-text"><em>You are cordially invited to</em></p>
-              <h1>Nicole's Halloween Party</h1>
+              <h1 id="drip">Nicole's Halloween Party</h1>
               <h2>October 30th @ 4pm</h2>
               
               <p>🎃 Drinks, games, spooks, and more 🎃<br>
@@ -40,17 +40,16 @@
           <div class="row">
             <div class="col">
                <div id="div1"><p id="ghost" >👻</p></div>
-              
             </div>
           </div>
   </body>
 <script>
 $(function() {
-$('#div1').hover(function() { 
-    $('#ghost').fadeIn(); 
-}, function() { 
-    $('#ghost').fadeOut(); 
-});
+  $('#div1').hover(function() { 
+      $('#ghost').fadeIn(); 
+  }, function() { 
+      $('#ghost').fadeOut(); 
+  });
 });
 </script>
 </html>
