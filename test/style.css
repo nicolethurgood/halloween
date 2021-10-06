@@ -90,6 +90,15 @@ ul li::after {
 ul li em {
   font-family: "Creepster";
 }
+#caution {
+  position: absolute;
+  font-size: 30px;
+  background-color: yellow;
+  color: black;
+  border-style: dashed;
+  top: 0;
+  width: 100vw;
+}
 @media (orientation: landscape) {
   h1 {
     font-size: 10vh;
@@ -106,6 +115,15 @@ ul li em {
   }
   #holloween {
     animation: drip 2.5s infinite alternate;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #caution {
+    font-size: 40px;
+    left: 40px;
+    transform: rotate(-45deg) translateX(-230px);
+    width: 600px;
+    transform-origin: center;
   }
 }
 @keyframes dripSmall {
