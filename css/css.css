@@ -60,10 +60,10 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #407b80; }
+      text-decoration: none;
+  color: #fe0000; }
   a:focus, a:hover {
-    text-decoration: none;
-    color: #407b80; }
+    color: #800000; }
 
 @media screen and (max-width: 768px) {
   body{
@@ -78,6 +78,9 @@ body {
 
 .row .col {flex-basis:20%}
 
+.theme{
+  font-family:  'Sancreek', cursive;
+}
 #ghost{
   font-size: 50px;
 }
