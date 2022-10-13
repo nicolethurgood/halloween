@@ -1,53 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Halloween 2021</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Ewert&family=Nosifer&family=Rye&family=Sancreek&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-
-    <link href="css/css.css" rel="stylesheet">
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Halloween 2022</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Syne+Mono&family=Ewert&family=Nosifer&family=Rye&family=Sancreek&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-          <div class="row">
-            <div class="col">
-              <p  class="intro-text"><em>You are cordially invited to</em></p>
-              <h1 id="drip">Nicole's Halloween Party</h1>
-              <h2>October 30th @ 8pm</h2>
-              <p>🎃 Drinks, games, spooks, and more 🎃<br>
-                🍺 BYOB/BYOW 🥦<br>
-                Address: 1723 73rd St #6<br>
-                Theme: <a class="theme" href="https://pin.it/2vO1wqn" target="_blank">dark canival, scary circus, freak show</a><br><br>
+    <div id="wrapper">
+      <!-- <div id="caution">UNDER CONSTRUCTION</div> -->
+      <p class="intro-text"><em>You are cordially invited to</em></p>
+      <h1>
+        <span class="bat">(</span>Nicole<span class="normal">'</span>s<span
+          class="bat"
+          >)</span
+        ><br />
+        <span id="halloween">Halloween Party</span>
+      </h1>
+      <h2>October 22<sup>th</sup> at 6pm</h2>
+      <div>
+        <span id="countDown"></span
+        ><span style="margin-top: 0">until the party</span>
+      </div>
 
-                Message Nicole directly for any questions 
-
-                <br>
-                <br>
-              🤡 <em>Show up in costume or one will be forced upon you. </em>🤡</p>
-            </div>
-          </div>
-      
+      <br />
+      <div id="info">
+        <div>
+          <p>🎃</p>
+          <p>Drinks, games, spooks, and more</p>
+          <p>🎃</p>
+        </div>
+        <div>
+          <p>🍺</p>
+          <p>BYOB/BYOW</p>
+          <p>🥦</p>
+        </div>
+        <div>
+          <p>Address: 321 20th St #4R</p>
+        </div>
+        <div>
+          <p>
+            Theme:
+            <span style="font-family: 'dusktilldawn'; color: red"
+              >Vampires</span
+            >
+          </p>
+        </div>
+        <br />
+        <div>
+          <p>Message Nicole directly for any questions</p>
+        </div>
+        <br />
+        <div>
+          <p>🧛</p>
+          <p><em>Fangs Provided</em></p>
+          <p>🧛‍♂️</p>
+        </div>
+      </div>
+      <!-- <p id="ghost">👻</p> -->
+    </div>
+    <script>
+      (function () {
+        // 1635624000000
+        // 1666476000000
+        const countDownDate = 1666476000000; //new Date("Oct 29, 2022 16:00:00").getTime();
+        let now = new Date().getTime();
+        const dayMils = 86400000;
+        const hourMils = 3600000;
+        const minuteMils = 60000;
+        function countDown() {
+          now += 1000;
+          let distance = countDownDate - now;
+          let days = Math.floor(distance / dayMils);
+          let hours = Math.floor((distance % dayMils) / hourMils);
+          let minutes = Math.floor((distance % hourMils) / minuteMils);
+          let seconds = Math.floor((distance % minuteMils) / 1000);
+          if (days < 10) days = `0${days}`;
+          if (hours < 10) hours = `0${hours}`;
+          if (minutes < 10) minutes = `0${minutes}`;
+          if (seconds < 10) seconds = `0${seconds}`;
+          document.getElementById("countDown").innerHTML = `
+						<span><p>${days}</p><label>days</label></span>
+						<span><p>${hours}</p><label>hours</label></span>
+						<span><p>${minutes}</p><label>minutes</label></span>
+						<span><p>${seconds}</p><label>seconds</label></span>
+					`;
+          if (distance < 0) {
+            clearInterval(countDown);
+            document.getElementById("countDown").innerHTML = "Party Started";
+          }
+        }
+        countDown();
+        setInterval(countDown, 1000);
+      })();
+    </script>
   </body>
-<script>
-$(function() {
-  $('#div1').hover(function() { 
-      $('#ghost').fadeIn(); 
-  }, function() { 
-      $('#ghost').fadeOut(); 
-  });
-});
-</script>
 </html>
