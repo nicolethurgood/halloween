@@ -1,4 +1,5 @@
 :root {
+  background-color: black;
 }
 @font-face {
   font-family: dusktilldawn;
@@ -26,7 +27,7 @@ body {
   font-family: sans-serif;
 }
 #wrapper {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: auto;
   background-color: black;
   display: flex;
@@ -135,6 +136,9 @@ ul li em {
   }
 }
 @media screen and (min-width: 1000px) {
+  #wrapper {
+    min-height: 100vh;
+  }
   p {
     font-size: 18pt;
   }
